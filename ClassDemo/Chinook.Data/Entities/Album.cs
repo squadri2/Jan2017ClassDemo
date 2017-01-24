@@ -25,6 +25,7 @@ namespace Chinook.Data.Entities
 
 
         //navigational Properties
+        //here Child Point to parent.
         public virtual Artist Artist { get; set; }
 
     }

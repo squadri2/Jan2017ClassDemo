@@ -34,5 +34,21 @@ namespace ChinookSystem.BLL
             }
 
         }
+
+
+
+
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
+
+        public List<Album> Albums_GetForArtistbyName(string name)
+        {
+            using (var context = new ChinookContext())
+            {
+                var results = context.Albums
+                    .Where(x => x.Artist.Name.Contains(name))
+                    .OrderByDescending(x => x.ReleaseYear);
+                return results.ToList();
+            }
+        }
     }
 }
