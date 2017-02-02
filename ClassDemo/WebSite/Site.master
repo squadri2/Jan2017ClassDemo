@@ -97,6 +97,9 @@
                                 <asp:MenuItem Text="Repeater " 
                                     NavigateUrl="~/SamplePages/RepeaterNestedRepeater.aspx"></asp:MenuItem>
 
+                                <asp:MenuItem Text="BootStrapTabs " 
+                                    NavigateUrl="~/SamplePages/BootStrapTabs.aspx"></asp:MenuItem>
+
                             </asp:MenuItem>
 
                             <asp:MenuItem Text="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
