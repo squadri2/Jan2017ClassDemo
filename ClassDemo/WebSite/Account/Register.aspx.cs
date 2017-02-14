@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web.UI;
 using WebSite;
 
+#region Additional Namespaces
+using Chinook.Data.Entities.Security;
+using ChinookSystem.BLL.Security;
+#endregion
 public partial class Account_Register : Page
 {
     protected void CreateUser_Click(object sender, EventArgs e)
